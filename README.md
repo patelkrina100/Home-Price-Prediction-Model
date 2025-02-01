@@ -45,4 +45,21 @@ This project leverages machine learning to predict the sale price of condos in B
 4. **K-Nearest Neighbors (KNN) with Hyperparameter Tuning**  
 
 ## Results & Visualizations
-- **Model Comparison**: Table & Bar plots visualizing MAE and R² scores.  
+- **Model Comparison**: Table & Bar plots visualizing MAE and R² scores.
+
+- ## 📌 Why This Project Matters
+
+Real estate pricing is complex, with prices influenced by multiple factors such as location, square footage, and market trends. This model provides **data-driven insights** for:
+
+- **Real Estate Investors**: Helps estimate property values for better investment decisions.  
+- **Home Buyers & Sellers**: Assists in determining fair market value based on historical sales data.  
+- **Real Estate Agents & Analysts**: Supports pricing strategies and trend forecasting.  
+
+By leveraging **machine learning**, this project enhances the accuracy of price predictions beyond traditional comparative market analysis.
+
+## 🔮 Future Improvements
+To improve performance and usability, future iterations of this project could include:
+- **Real-Time Data Integration**: Pulling in live MLS listings for up-to-date predictions.  
+- **More Features**: Including interest rates, HOA fees, proximity to attractions/schools/shopping centers, and neighborhood crime statistics.  
+- **Web App Deployment**: Creating a user-friendly web interface where users can input condo details and get instant price predictions.   
+
