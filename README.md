@@ -8,6 +8,11 @@ Predicting condo sale prices in Boston using multiple regression models.
 
 This project leverages machine learning to predict the sale price of condos in Boston based on real estate data sourced from an MA MLS search. The dataset includes features like square footage, number of bedrooms, location, and age of the property. The models used for prediction include Random Forest, Gradient Boosting, Linear Regression, and K-Nearest Neighbors (KNN).
 
+## 🏠 About This Model
+This **Home Price Prediction Model** is designed to estimate real estate prices based on historical sales data and property features. While this specific implementation was trained using **condo sales data from Boston**, the model structure is flexible and can be easily **adapted for predicting house prices** by incorporating relevant variables like lot size, number of floors, and detached vs. attached homes.
+
+If applied to single-family homes or other property types, **adjustments to feature selection** and **data preprocessing** may be necessary for optimal accuracy.
+
 ## Dataset: MLS Data 1.29.25.csv
 
 **Source**: Massachusetts MLS Search  
