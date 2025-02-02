@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condo Price Predictor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            text-align: center;
+        }
+        form {
+            display: inline-block;
+            text-align: left;
+            background: #f8f8f8;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        input {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            background: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #218838;
+        }
+        .result {
+            margin-top: 20px;
+            font-size: 20px;
+            font-weight: bold;
+            color: #333;
+        }
+        .confidence {
+            font-size: 16px;
+            color: #555;
+        }
+        .error {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>🏠 Condo Price Predictor</h1>
+    <p>Enter condo details to estimate the sale price:</p>
+
+    <form action="/predict" method="post">
+        <label for="NO_BEDROOMS">Number of Bedrooms:</label>
+        <input type="number" step="1" name="NO_BEDROOMS" required>
+
+        <label for="SQUARE_FEET">Square Feet:</label>
+        <input type="number" step="1" name="SQUARE_FEET" required>
+
+        <label for="HOME_AGE">Home Age (Years):</label>
+        <input type="number" step="1" name="HOME_AGE" required>
+
+        <label for="GARAGE_SPACES_CC">Garage Spaces:</label>
+        <input type="number" step="1" name="GARAGE_SPACES_CC" required>
+
+        <label for="FULL_BATHS">Full Baths:</label>
+        <input type="number" step="1" name="FULL_BATHS" required>
+
+        <label for="HALF_BATHS">Half Baths:</label>
+        <input type="number" step="1" name="HALF_BATHS" required>
+
+        <button type="submit">Predict Price</button>
+    </form>
+
+    {% if prediction %}
+        <p class="result">{{ prediction }}</p>
+        {% if confidence %}
+            <p class="confidence">{{ confidence }}</p>
+        {% endif %}
+    {% endif %}
+
+    {% if error %}
+        <p class="error">{{ error }}</p>
+    {% endif %}
+
+</body>
+</html>
