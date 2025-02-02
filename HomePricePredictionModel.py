@@ -17,9 +17,10 @@ from sklearn.linear_model import LinearRegression
 from sklearn.neighbors import KNeighborsRegressor
 from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
+import os
 
-# Path to the dataset
-file_path = "/Users/krinapatel/Downloads/personal/DS_Projects/CondoPricePrediction_2.1.25/MLSData_1.29.25.csv"
+# Automatically find dataset in the same folder as the script
+file_path = os.path.join(os.path.dirname(__file__), "MLSData_1.29.25.csv")
 
 # Load the dataset
 df = pd.read_csv(file_path)
