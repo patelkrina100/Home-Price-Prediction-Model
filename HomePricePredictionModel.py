@@ -1,7 +1,6 @@
 # Home Price Prediction Model
 
 # Author: Krina Patel
-# Date: January 29, 2025
 # Description: Predicting condo sale prices in Boston using multiple regression models.
 # Models Used: Random Forest, Gradient Boosting, Linear Regression, KNN.
 
